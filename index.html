@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ola</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+</head>
+<body>
+    <div class="main-secation">
+        <div class="nav-bar">
+            <ul class="left-nav">
+                <li> <div class="logo">
+                    <img src="./Assets/ola-white-logo.png" alt="logo">
+                </div></li>
+                <li><a href="#">Ola Electric</a></li>
+                <li><a href="#"> Krutrim</a></li>
+            </ul>
+            <ul class="right-nav">
+                <li><button class="nav-black">Book an Ola cab</button></li>
+                <li><button class="nav-white">Free S1 Test Ride</button></li>
+                <li><button class="icon"><img src="./Assets/Hamburger (1).svg" alt="Hamburger"></button></li>
+            </ul>
+        </div>
+        <!-- nav-bar end -->
+        <div class="hero-secation">
+            <div class="hero-banner">
+                <p>Moving people, <br>
+                   and the world</p>
+            </div>
+            <div class="hero-video">
+               <video controls width="100%" loop autoplay muted>
+                <source src="./Assets/banner-video-mob.mp4">
+               </video>
+            </div>
+        </div>
+        <!-- hero-secation end -->
+        <div class="tab-secation">
+            <div class="tabs">
+                <button class="tab-button" onclick="showTab('daily')">Daily</button>
+                <button class="tab-button" onclick="showTab('rental')">Rental</button>
+                <button class="tab-button active" onclick="showTab('outstation')">Outstation</button>
+            </div>
+        
+            <div id="daily" class="tab-content">
+                <div class="input-group">
+                    <div class="input-item">
+                        <div class="green-round"></div>
+                        <input type="text" placeholder="Current location">
+                        <div class="Select-cur-loc"> <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/current-location.svg" alt=""></div>
+                        
+                    </div>
+                    <div class="line"></div>
+                    <div class="input-item">
+                        <div class="red-round"></div>
+                        <input class="input-1" type="text" placeholder="Enter destination" >
+                    </div>
+                    <button class="search-button"><span>SEARCH</span> OLA CABS </button>
+                    <div class="forward-arrow"><img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/forward-arrow.svg" alt=""></div>
+                </div>
+            </div>
+            <div id="rental" class="tab-content">
+              
+                <div class="input-group">
+                    <div class="input-item">
+                        <div class="green-round"></div>
+                        <input type="text" placeholder="Current location">
+                        <div class="Select-cur-loc"> <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/current-location.svg" alt=""></div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="input-item">
+                        <input class="input-2" type="text" placeholder="Select Package">
+                        <div class="clock"><img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/clock.svg" alt=""></div>
+                    </div>
+                    <button class="search-button"><span>SEARCH</span> RENTAL CABS</button>
+                    <div class="forward-arrow"><img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/forward-arrow.svg" alt=""></div>
+                </div>
+            </div>
+            <div id="outstation" class="tab-content active">
+                <div class="input-group">
+                    <div class="input-item">
+                        <div class="green-round"></div>
+                        <input type="text" placeholder="Current location">
+                        <div class="Select-cur-loc"> <img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/current-location.svg" alt=""></div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="input-item">
+                        <div class="red-round"></div>
+                        <input type="text" placeholder="Enter destination">
+                    </div>
+                    <button class="search-button">SEARCH OUTSTATION CABS</button>
+                    <div class="forward-arrow"><img src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/forward-arrow.svg" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <!-- tab-secation end -->
+
+        <div class="index-secation">
+            <div class="index-banner">
+                <img src="./Assets/index_banner.png" alt="">
+            </div>
+        </div>
+        <div class="index-secation-2">
+            <div class="index-banner-2">
+                <img src="./Assets/index_banner_mobile.png" alt="">
+            </div>
+        </div>
+     <!-- index-secation end -->
+     <div class="global-secation">
+        <h1>Global mobility ecosystem driving <br>
+             communities forward</h1>
+             <div class="global-wrapper">
+                <div class="global-card">
+                    <div class="global-mini">
+                        <object type="image/svg+xml" class="cities-covered-img" data="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/cts-covered.svg" name="cities-covered"></object>
+                    </div>
+                    
+                    <div class="global-title">250+</div>
+                    <div class="global-subtitle">Cities covered</div>
+                    <div class="global-text">Across India, Australia,  <br>
+                        New Zealand and the UK</div>
+                 </div>
+                 <div class="global-card">
+                    <div class="global-mini">
+                        <object type="image/svg+xml" class="cities-covered-img" data="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/year-rides.svg" name="yearly-rides"></object>
+                    </div>
+                    <div class="global-title">55 Cr+</div>
+                    <div class="global-subtitle">Yearly rides</div>
+                    <div class="global-text">Booked by our <br> customers every year</div>
+                 </div>
+                 <div class="global-card">
+                    <div class="global-mini">
+                        <object type="image/svg+xml" class="cities-covered-img" data="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/kms-covered.svg" name="kms-covered"></object>
+                    </div>
+                    <div class="global-title">12 Cr+</div>
+                    <div class="global-subtitle">Kilometers on S1</div>
+                    <div class="global-text">Distance covered on Ola S1 <br>
+                        scooters within a year of launch</div>
+                 </div>
+             </div>
+         </div>
+         <!-- global-secation end -->
+         <div class="global-secation-2">
+            <h1>Global mobility ecosystem driving <br>
+                 communities forward</h1>
+                 <div class="global-wrapper-2">
+                    <div class="global-card-2">
+                        <div class="global-mini-2">
+                            <object type="image/svg+xml" class="cities-covered-img" data="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/cts-covered.svg" name="cities-covered"></object>
+                        </div>
+                         <div class="text-warpper">
+                            <div class="global-title-2">250+cities</div>
+                        <div class="global-text-2">Across India, Australia,
+                            New Zealand and the UK</div>
+                         </div>
+                    </div>
+                    <!-- 1 -->
+                    <div class="global-card-2">
+                        <div class="global-mini-2">
+                            <object type="image/svg+xml" class="cities-covered-img" data="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/year-rides.svg" name="yearly-rides"></object>
+                        </div>
+                        <div class="text-warpper">
+                            <div class="global-title-2">55 Crore+Yearly rides</div>
+                        <div class="global-text-2">Booked by our customers every year</div>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                     <div class="global-card-2">
+                        <div class="global-mini-2">
+                            <object type="image/svg+xml" class="cities-covered-img" data="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/kms-covered.svg" name="kms-covered"></object>
+                        </div>
+                        <div class="text-warpper">
+                        <div class="global-title-2">12 Crore+Km on S1</div>
+                        <div class="global-text-2">Distance covered on Ola S1 
+                            scooters within a year of launch</div>
+                        </div>
+                     </div>
+                     <!-- 3 -->
+                    </div>
+                  
+                   
+                 </div>
+             <!-- global-secation-2 end -->
+             <div class="ride-secation">
+                <h1>There's an Ola ride for everyone</h1>
+                     <div class="ride-wrapper">
+                        <div class="ride-card">
+                            <div class="ride-mini">
+                                <img src="./Assets/ride-budget.svg" alt="">
+                            </div>
+                            <div class="ride-title">For any budget</div>
+                            <div class="ride-subtitle">From  <span>Bikes</span> and <span> Autos</span> to  <span>Prime Sedans</span> <br>
+                                 and <span>Prime SUVs,</span> you will find a ride in <br>
+                                  your budget at your convenience any  <br>
+                                  time.</div>
+                         </div>
+                         <div class="ride-card">
+                            <div class="ride-mini">
+                               <img src="./Assets/ride-distance.svg" alt="">
+                            </div>
+                            <div class="ride-title">For any distance</div>
+                            <div class="ride-subtitle">Book rides within the city with <span>Daily,</span> or  <br>
+                                take a trip to your favourite <br>
+                                 destinations outside the city with  <br>
+                                <span>Outstation.</span> </div>
+                         </div>
+                        <div class="ride-card">
+                            <div class="ride-mini">
+                               <img src="./Assets/ride-duration.svg" alt="">
+                            </div>
+                            
+                            <div class="ride-title">For any duration</div>
+                            <div class="ride-subtitle">Easily plan a day out without having to <br>
+                                worry about conveyance with an  <br>
+                                hour-based package from  <br>
+                                <span> Rental</span>.</div>
+                            
+                         </div>
+                        
+                     </div>
+                 </div>
+                  <!-- 1 -->
+                 <div class="ride-secation-2">
+                    <h1>There's an Ola ride for everyone</h1>
+                         <div class="ride-wrapper-2">
+                            <div class="ride-card-2">
+                                <div class="ride-mini-2">
+                                    <img src="./Assets/ride-budget.svg" alt="">
+                                </div>
+                                <div class="text-warpper">
+                                <div class="ride-title-2">For any budget</div>
+                                <div class="ride-subtitle-2">From  <span>Bikes</span> and <span> Autos</span> to  <span>Prime Sedans</span> <br>
+                                     and <span>Prime SUVs,</span> you will find a ride in <br>
+                                      your budget at your convenience any  <br>
+                                      time.</div>
+                                </div>
+                             </div>
+                             <div class="ride-card-2">
+                                <div class="ride-mini-2">
+                                   <img src="./Assets/ride-distance.svg" alt="">
+                                </div>
+                                <div class="text-warpper">
+                                <div class="ride-title-2">For any distance</div>
+                                <div class="ride-subtitle-2">Book rides within the city with <span>Daily,</span> or  <br>
+                                    take a trip to your favourite <br>
+                                     destinations outside the city with  <br>
+                                    <span>Outstation.</span> </div>
+                                </div>
+                             </div>
+                            <div class="ride-card-2">
+                                <div class="ride-mini-2">
+                                   <img src="./Assets/ride-duration.svg" alt="">
+                                </div>
+                                <div class="text-warpper">
+                                <div class="ride-title-2">For any duration</div>
+                                <div class="ride-subtitle-2">Easily plan a day out without having to <br>
+                                    worry about conveyance with an  <br>
+                                    hour-based package from  <br>
+                                    <span> Rental</span>.</div>
+                                    </div>
+                                
+                             </div>
+                            
+                         </div>
+                     </div>
+                 <!-- ride-secation end -->
+                 <div class="video-secation">
+                    <video id="video-wrapper" controlslist="nodownload" playsinline="" autoplay="" muted="" loop="" style="width: 500px; height: auto;">
+                        <source id="video-element" src="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/for-drivers.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-content">
+                        <h1>Making innovations <br>
+                             since 2011</h1>
+                        <div class="up-part">
+                                <h5>For Riders</h5>
+                                <p>We constantly experiment to come up with <br>
+                                   industry-first features for our riders that eventually <br>
+                                   become a norm.</p>
+                            </div>
+                        <div class="down-part">
+
+                            <h5>For Drivers</h5>
+                            <p>Our drivers get real time stats to help optimize their <br>
+                                rides better and earn more, straight from the app. <br>
+                            </p>
+
+                        </div>
+                        
+                    </div>
+                 </div>
+                 <!-- video-secation end -->
+                  <div class="ex-secation">
+                    <div class="ex-secation-main">
+                       
+                    </div>
+                            
+                      <div class="ex-wrapper">
+    
+                        <div class="left-ex">
+                            <h1>Experience the <br>
+                                smarter way to pay</h1>
+                            <img src="./Assets/insurance-shop-img.png" alt="">
+                        </div>
+                        <div class="right-ex">
+                            <span><p>Postpaid +</p> <button class="ex-btn">Trusted by 40 lakh+ users</button></span>
+                            <h5>Buy now, pay later for all spends <br>
+                                 once a month</h5>
+                            <div class="ex-box">
+                                <div class="ex-minibox">
+                                    <img src="./Assets/insurance-1.svg" alt="">
+                                    <p>Buy now, pay <br>
+                                      after 30 days</p>
+                                </div>
+                                <!-- 1 -->
+                                <div class="ex-minibox">
+                                    <img src="./Assets/insurance-2.svg" alt="">
+                                    <p>Shop across <br> 
+                                        20,000 apps
+                                      </p>
+                                </div>
+                                <!-- 2 -->
+                                <div class="ex-minibox">
+                                    <img src="./Assets/insurance-3.svg" alt="">
+                                    <p>Credit limit upto <br>
+                                         ₹100,000
+                                      </p>
+                                </div>
+                               
+                            </div>
+                        </div>
+                      </div>
+                      <!-- ex-wrapper end -->
+                       <div class="Insurance-sec">
+                        <div class="left-Insurance">
+                         <p>Insurance</p>
+                         <h5>Effective insurances for all your risks</h5>
+                         <span>
+                            <a href="#">Explore more on the Ola app<i class="fa-regular fa-arrow-right"></i> </a>
+                         </span>
+                        
+                        </div>
+                        <div class="right-Insurance">
+                            <div class="Insurance-card">
+                                <div class="Insurance-mini-card">
+                                    <object type="image/svg+xml" data="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/insure-trips.svg" name="">
+                                    </object>
+                                  </div>
+                                    <div class="Insurance-mini-card">
+                                        <object type="image/svg+xml" class="insurance-banner-image" data="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/insure-daily.svg" name="">
+                                        </object>
+                                </div>
+                                <div class="Insurance-mini-card">
+                                    <object type="image/svg+xml" class="insurance-banner-image" data="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/insure-hospicash.svg" name="">
+                                    </object>
+                            </div>
+                           </div>
+                           <p class="muchmore">+ Much more</p>
+                        </div>                       
+                    </div>
+                    <!-- .Insurance-sec end -->
+                    <div class="Insurance-sec-2">
+                        <div class="left-Insurance-2">
+                         <p>Insurance</p>
+                         <h5>Effective insurances for all your risks</h5>
+                     </div>
+                        <div class="right-Insurance-2">
+                            <div class="overflow">
+                                <div class="Insurance-card-2">
+                                    <div class="Insurance-mini-card-2">
+                                        <object type="image/svg+xml" data="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/insure-trips.svg" name="">
+                                        </object>
+                                      </div>
+                                        <div class="Insurance-mini-card-2">
+                                            <object type="image/svg+xml" class="insurance-banner-image" data="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/insure-daily.svg" name="">
+                                            </object>
+                                    </div>
+                                    <div class="Insurance-mini-card-2">
+                                        <object type="image/svg+xml" class="insurance-banner-image" data="https://s3-ap-southeast-1.amazonaws.com/ola-prod-website/insure-hospicash.svg" name="">
+                                        </object>
+                                </div>
+                               </div>
+                            </div>
+                           
+                           <span>
+                            <a href="#">Explore more on the Ola app<i class="fa-regular fa-arrow-right"></i> </a>
+                            <p class="insurance">+ Much more</p>
+                        </span>
+                          
+                        </div>                       
+                    </div>
+                    <!-- .Insurance-sec-2 end -->
+                </div>
+                <!-- ex-secation end -->
+                 <div class="Foundation-sec">
+                    <div class="Foundation-sec-main">
+                        <div class="Foundation-left">
+                            <h1>Making a difference</h1>
+                            <p>Ola Foundation, the social welfare arm of Ola, is an outcome of a <br>
+                                belief based on real interactions, research, and extensive study on <br>
+                                the far-reaching impact of enabling and equipping people.
+                            </p>
+                                <img src="./Assets/womens.png" alt="womens">
+                                <img src="./Assets/donating.png" alt="donating">
+                            <span>
+                                <a href="#">More about Ola Foundation<i class="fa-regular fa-arrow-right"></i> </a>
+                            </span>
+                          
+                           </div>
+                        <div class="Foundation-right">
+                            <div class="upper">
+                                <div class="upper-left">
+                                    <h5>1 Lakh+</h5>
+                                    <p>Families impacted in FY <br>
+                                    2020-21</p>
+                                </div>
+                                   <div class="upper-right">
+                                    <h5>93 Lakh+</h5>
+                                    <p>Meals enabled across <br>
+                                        India in FY 2020-21</p>
+                                   </div>
+                                </div>
+                                <div class="Foundation-img">
+                                    <img src="./Assets/mother-son.png" alt="mother-son">
+                                </div>
+                            
+                        </div>
+                    </div>
+                  
+                 </div>
+                 <!-- Foundation-sec end -->
+                  <div class="Foundation-sec-2">
+                    <div class="Foundation-sec-main-2">
+                        <div class="Foundation-left-2">
+                            <h1>Making a difference</h1>
+                            <p>Ola Foundation, the social welfare arm of Ola, is an outcome of a <br>
+                                belief based on real interactions, research, and extensive study on <br>
+                                the far-reaching impact of enabling and equipping people.
+                            </p>
+                            <div class="fs-item">
+                                <img src="./Assets/womens.png" alt="womens">
+                                <img src="./Assets/donating.png" alt="donating">
+                            </div>
+                           
+                            </div>
+                            
+                            
+                        <div class="Foundation-right-2">
+                          
+                                <div class="Foundation-img-2">
+                                    <img src="./Assets/mother-son.png" alt="mother-son">
+                                </div>
+                                <div class="upper-2">
+                                    <div class="upper-left-2">
+                                        <h5>1 Lakh+</h5>
+                                        <p>Families impacted in FY <br>
+                                        2020-21</p>
+                                    </div>
+                                       <div class="upper-right-2">
+                                        <h5>93 Lakh+</h5>
+                                        <p>Meals enabled across <br>
+                                            India in FY 2020-21</p>
+                                       </div>
+                                    </div>
+                                <span>
+                                    <a href="#">More about Ola Foundation<i class="fa-regular fa-arrow-right"></i> </a>
+                                </span>
+                        </div>
+                       
+                    </div>
+                  
+                 </div>
+                 <!-- Foundation-sec-2 end  -->
+                 <div class="food-sec">
+                    <div class="food-wrapper">
+                        <div class="left-food">
+                            <h4>Experience a new  <br>
+                               way to order food</h4>
+                               <p>ONDC Food</p>
+                               <h5>Make hunger disappear with <br>
+                                   your go to comfort food.</h5>
+                            <span>
+                               <a href="#">Explore more on the Ola app<i class="fa-regular fa-arrow-right"></i> </a>
+                            </span>
+                           </div>
+                           <div class="right-food">
+                               <div class="food-card">
+                                   <div class="food-mini-card">
+                                       <img src="./Assets/foods-variety.png" alt="">
+                                     </div>
+                                       <div class="food-mini-card">
+                                          <img src="./Assets/foods-discount.png" alt="">
+                                   </div>
+                                   <div class="food-mini-card">
+                                     <img src="./Assets/foods-delivery.png" alt="">
+                               </div>
+                               
+                              </div>
+                              <!-- <p>Powered by Ola Stores Technologies Private Limited</p>  -->
+                           </div>
+                                               
+                    </div>
+                   
+                </div>
+                <!-- food-sec end -->
+                <div class="food-sec-2">
+                    <div class="food-wrapper-2">
+                        <div class="left-food-2">
+                            <h4>Experience a new  <br>
+                               way to order food</h4>
+                               <p>ONDC Food</p>
+                               <h5>Make hunger disappear with <br>
+                                   your go to comfort food.</h5>
+                          </div>
+                           <div class="right-food-2">
+                            <div class="food-overflow">
+                                <div class="food-card-2">
+                                    <div class="food-mini-card-2">
+                                        <img src="./Assets/foods-variety.png" alt="">
+                                      </div>
+                                        <div class="food-mini-card-2">
+                                           <img src="./Assets/foods-discount.png" alt="">
+                                    </div>
+                                    <div class="food-mini-card-2">
+                                      <img src="./Assets/foods-delivery.png" alt="">
+                                </div>
+                             </div>
+                            </div>
+                            
+                            <span>
+                                <a href="#">Explore more on the Ola app<i class="fa-regular fa-arrow-right"></i> </a>
+                             </span>
+                              <!-- <p>Powered by Ola Stores Technologies Private Limited</p>  -->
+                           </div>
+                                               
+                    </div>
+                   
+                </div>
+                <!-- food-sec-2 end -->
+
+
+  
+        <div class="blog-secation">
+            <div class="blog-wrapper-main"></div>
+                <div class="blog-wrapper">
+                    <h1>Recent from our blogs</h1>
+                    <div class="blog-card-box">
+                        <div class="blog-card">
+                            <img src="./Assets/pli-agreement.png" alt="">
+                            <h5>Ola signs PLI agreement</h5>
+                            <span>
+                                <a href="#">Know more<i class="fa-regular fa-arrow-right"></i> </a>
+                             </span>
+                        </div>
+                        <!-- 1 -->
+                        <div class="blog-card">
+                            <img src="./Assets/ola-to-invest.png" alt="">
+                            <h5>Ola to invest $500 million</h5>
+                            <span>
+                                <a href="#">Know more<i class="fa-regular fa-arrow-right"></i> </a>
+                             </span>
+                        </div>
+                        <!-- 2 -->
+                        <div class="blog-card">
+                            <img src="./Assets/indigenous-cell.png" alt="">
+                            <h5>India's first indigenous cell</h5>
+                            <span>
+                                <a href="#">Know more<i class="fa-regular fa-arrow-right"></i> </a>
+                             </span>
+                        </div>
+                        <!-- 3 -->
+                    </div>
+                </div>
+            
+            
+        </div>
+        <!-- blog-secation end -->
+            <div class="app-wrapper">
+                <h2>
+                    Download our apps to <br>
+                     get the best experience
+                </h2>
+                <h3 class="mobile-title"> Download our apps</h3>
+                <div class="card-wrapper">
+                    <div class="card">
+
+                        <div class="card-icon">
+                            <img src="./Assets/unnamed (1).webp" alt="icon">
+                        </div>
+                        <div class="card-head">
+                            <div class="card-title">
+                                <h1>Ola</h1>
+                                <img src="./Assets/right-arrow.svg" alt="">
+                            </div>
+                            <div class="card-subtitle">
+                                <p>Book cabs, buy insurance, access <br>
+                                     Ola Money and much more</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-1">
+
+                        <div class="card-icon-1">
+                            <img src="./Assets/unnamed.webp" alt="icon">
+                        </div>
+                        <div class="card-head-1">
+                            <div class="card-title-1">
+                                <h1>Ola Drive</h1>
+                                <img src="./Assets/right-arrow.svg" alt="">
+                            </div>
+                            <div class="card-subtitle-1">
+                                <p>Register as a driver to take rides, <br>
+                                   see your earnings and incentives</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-item">
+                <ul class="footer-icon">
+                    <li>
+                        <img src="./Assets/OLA.svg" alt="Ola">
+                    </li>
+                    <li>
+                        <img src="./Assets/insta.svg" alt="insta">
+                        <img src="./Assets/youtube.svg" alt="youtube">
+                        <img src="./Assets/twitter.svg" alt="twitter">
+                    </li>
+                </ul>
+                <ul class="footer-list">
+                    <li><a href="#">Book a cab</a></li>
+                    <li><a href="#">Drive with us</a></li>
+                    <li><a href="#">Outstation</a></li>
+                    <li><a href="#">Rental</a></li>
+                    <li><a href="#">Ola Money</a></li>
+                    <li><a href="#">Corporate</a></li>
+                </ul>
+                <ul class="footer-list">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#"> Support</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Media Centre</a></li>
+                </ul>
+                <ul class="footer-list">
+                    <li><a href="#">Ola S1</a></li>
+                    <li><a href="#">Futurefactory</a></li>
+                    <li><a href="#"> Electric</a></li>
+                    <li><a href="#">Investor Relations</a> </li>
+                    <li><a href="#">Media Centre</a></li>
+                </ul>
+                <ul class="element">
+                    <li><h5>Stay upto date</h5></li>
+                    <li><input type="text" placeholder="Enter your email"></li>
+                    <li><button class="footer-btn">SUBSCRIBE TO   <span class="green-text">NEWSLETTER</span> <img src="./Assets/right.svg" alt=""></button></li>
+                
+
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="mini-footer">
+            <p>Copyright © 2022 Ola Electric Mobility Pvt Ltd. All Rights Reserved.</p>
+            <ul>
+                <li> <a href="#">Notices/a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    <!-- <script src="scripts.js"></script> -->
+    <script>
+     function showTab(tabName) {
+        var i;
+        var tabContent = document.getElementsByClassName("tab-content");
+        var tabButtons = document.getElementsByClassName("tab-button");
+    
+        for (i = 0; i < tabContent.length; i++) {
+            tabContent[i].classList.remove("active");
+        }
+    
+        for (i = 0; i < tabButtons.length; i++) {
+            tabButtons[i].classList.remove("active");
+        }
+    
+        document.getElementById(tabName).classList.add("active");
+        event.target.classList.add("active");
+    }
+    
+    </script>
+   
+</body>
+</html>
